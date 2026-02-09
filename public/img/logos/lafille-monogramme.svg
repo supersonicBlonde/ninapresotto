@@ -1,0 +1,15 @@
+<svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M41 81.9999C63.6436 81.9999 81.9999 63.6436 81.9999 41C81.9999 18.3563 63.6436 0 41 0C18.3563 0 0 18.3563 0 41C0 63.6436 18.3563 81.9999 41 81.9999Z" fill="#3E3D3D" style="fill:#3E3D3D;fill:color(display-p3 0.2431 0.2392 0.2392);fill-opacity:1;"/>
+<path d="M34.9183 32.5608C37.6687 32.5608 39.7699 33.6029 41.0085 35.3454L42.7681 25.4114C43.682 20.3462 43.9639 17.4677 43.4001 15.9131C43.3574 15.8277 43.3147 15.7508 43.2549 15.6825C42.7766 14.9992 41.8968 14.7942 40.5301 14.7942L40.7351 13.3506L48.7985 11.6252L48.1066 15.6825L47.5514 18.9198C47.5514 18.9198 47.5514 18.9198 47.5428 18.9198L40.496 59.5952C40.1458 61.6024 40.1372 63.1827 41.0597 63.2254C41.7858 63.2595 43.2293 62.0039 43.7845 61.406L43.6991 63.4218C42.3068 65.1216 40.402 66.3516 39.2147 66.3089C36.9085 66.2064 36.097 63.5329 36.6437 60.0393L40.3508 39.1123C40.3764 38.8902 40.3849 38.6595 40.3849 38.4375C40.3849 36.2679 38.8218 33.8421 35.2685 33.8421C31.7151 33.8421 32.3643 35.0806 31.9287 36.2252C31.4931 37.1562 30.972 37.8139 29.9385 37.8139C28.9049 37.8139 28.5718 37.3783 28.2558 36.7377C28.2387 36.7206 28.2131 36.7035 28.2045 36.6864C28.2216 36.7035 28.2387 36.7121 28.2472 36.7206C28.1191 36.4558 28.0337 36.1483 28.0337 35.8237C28.0337 33.6541 31.066 32.5523 34.9268 32.5523L34.9183 32.5608Z" fill="url(#paint0_linear_598_1740)" style=""/>
+<defs>
+<linearGradient id="paint0_linear_598_1740" x1="38.4118" y1="66.3089" x2="38.4118" y2="11.6252" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E79569" style="stop-color:#E79569;stop-color:color(display-p3 0.9059 0.5843 0.4118);stop-opacity:1;"/>
+<stop offset="0.2" stop-color="#DC6D95" style="stop-color:#DC6D95;stop-color:color(display-p3 0.8627 0.4275 0.5843);stop-opacity:1;"/>
+<stop offset="0.3" stop-color="#D9689B" style="stop-color:#D9689B;stop-color:color(display-p3 0.8510 0.4078 0.6078);stop-opacity:1;"/>
+<stop offset="0.6" stop-color="#3E89A5" style="stop-color:#3E89A5;stop-color:color(display-p3 0.2431 0.5373 0.6471);stop-opacity:1;"/>
+<stop offset="0.8" stop-color="#0097A9" style="stop-color:#0097A9;stop-color:color(display-p3 0.0000 0.5922 0.6627);stop-opacity:1;"/>
+<stop offset="0.9" stop-color="#006CA3" style="stop-color:#006CA3;stop-color:color(display-p3 0.0000 0.4235 0.6392);stop-opacity:1;"/>
+<stop offset="1" stop-color="#005AA1" style="stop-color:#005AA1;stop-color:color(display-p3 0.0000 0.3529 0.6314);stop-opacity:1;"/>
+</linearGradient>
+</defs>
+</svg>

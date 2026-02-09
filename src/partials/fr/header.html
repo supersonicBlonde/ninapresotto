@@ -1,0 +1,268 @@
+<header id="site-header" class="top-0 left-0 w-full z-50 bg-dark">
+  <nav
+    aria-label="Global"
+    class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+  >
+    <div class="flex lg:flex-1">
+      <a href="/" class="-m-1.5 p-1.5">
+        <div
+          class="logo-title md:mb-1 inline-block md:text-[31px]/8 text-cream font-MontreuxBrandingBold uppercase tracking-wide"
+        >
+          Nina Presotto
+        </div>
+        <div>
+          <span
+            class="logo-subtitle font-MontreuxBrandingBold text-xs/4 md:text-[15px]/4 text-dark pt-1 px-1 bg-earth-500 uppercase"
+          >
+            Coding the way forward
+          </span>
+        </div>
+      </a>
+    </div>
+
+    <!-- MOBILE MENU BUTTON -->
+    <div class="flex lg:hidden">
+      <button
+        type="button"
+        command="show-modal"
+        commandfor="mobile-menu"
+        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          aria-hidden="true"
+          class="size-6"
+        >
+          <path
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <!-- DESKTOP MENU -->
+    <div
+      class="hidden lg:flex lg:items-center lg:gap-x-6 ml-auto font-Electrolize font-light uppercase text-cream tracking-wide"
+      id="main-menu"
+    >
+      <div class="relative group">
+        <a
+          href="/how-can-i-help"
+          class="text-sm/6 uppercase inline-block with-hover"
+          data-nav-link
+          data-nav-parent="help"
+        >
+          I can help with ...
+        </a>
+        <div class="absolute left-0 top-full h-3 w-full"></div>
+
+        <div
+          class="absolute left-0 mt-2 invisible opacity-0 translate-y-4 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 w-[220px] bg-dark"
+        >
+          <a
+            href="/white-label-web-outsourcing"
+            data-nav-child="help"
+            class="block px-2 py-1 text-xs text-dark bg-earth-500 mb-2 font-semibold transition-all hover:bg-transparent hover:text-white hover:underline"
+            >Saving time</a
+          >
+          <a
+            href="/i-am-your-technical-partner"
+            data-nav-child="help"
+            class="block px-2 py-1 text-xs text-dark bg-earth-500 mb-2 font-semibold transition-all hover:bg-transparent hover:text-white hover:underline"
+            >Technical expertise</a
+          >
+          <a
+            href="/define-your-web-project"
+            data-nav-child="help"
+            class="block px-2 py-1 text-xs text-dark bg-earth-500 mb-2 font-semibold transition-all hover:bg-transparent hover:text-white hover:underline"
+            >Starting your project</a
+          >
+          <!-- <a
+            href="/define-your-web-project"
+            data-nav-child="help"
+            class="block px-2 py-1 text-xs text-dark bg-earth-500 mb-2 font-semibold transition-all hover:bg-transparent hover:text-white hover:underline"
+            >Regulatory Compliance</a
+          > -->
+        </div>
+      </div>
+
+      <div class="relative group">
+        <a
+          href="/work-process"
+          data-nav-link
+          class="text-sm/6 uppercase inline-block with-hover"
+          >Process</a
+        >
+      </div>
+
+      <div class="relative group">
+        <a
+          href="/portfolio-web-developer"
+          data-nav-link
+          class="text-sm/6 uppercase inline-block with-hover"
+          >Work</a
+        >
+      </div>
+
+      <div class="relative group">
+        <a
+          href="/testimonials"
+          data-nav-link
+          class="text-sm/6 uppercase inline-block with-hover"
+          >Testimonials</a
+        >
+      </div>
+
+      <div class="relative group">
+        <a
+          href="/faq-freelance-web-developer"
+          data-nav-link
+          class="text-sm/6 uppercase inline-block with-hover"
+          >FAQ</a
+        >
+      </div>
+      <div class="relative group">
+        <a
+          href="/about-nina-presotto"
+          data-nav-link
+          class="text-sm/6 uppercase inline-block with-hover"
+          >ABOUT</a
+        >
+      </div>
+      <div class="relative group">
+        <a
+          href="/contact"
+          class="text-sm/6 uppercase inline-block text-dark bg-earth-500 px-2 transition-all font-semibold hover:bg-transparent hover:text-white hover:underline"
+        >
+          Contact
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <el-dialog>
+    <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+      <div tabindex="0" class="fixed inset-0 focus:outline-none">
+        <el-dialog-panel
+          class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-dark p-6 sm:max-w-sm sm:ring-1 sm:ring-white-900/10"
+        >
+          <div class="flex items-center justify-between">
+            <a href="/" class="-m-1.5 p-1.5 sm:hidden">
+              <div
+                class="md:mb-1 inline-block md:text-[31px]/8 text-cream font-MontreuxBrandingBold uppercase tracking-wide"
+              >
+                Nina Presotto
+              </div>
+              <div>
+                <span
+                  class="font-MontreuxBrandingBold text-xs/4 md:text-[15px]/4 text-dark pt-1 px-1 bg-earth-500 uppercase"
+                >
+                  Coding the way forward
+                </span>
+              </div>
+            </a>
+            <button
+              type="button"
+              command="close"
+              commandfor="mobile-menu"
+              class="-m-2.5 rounded-md p-2.5 sm:ml-auto"
+            >
+              <span class="sr-only">Close menu</span>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                aria-hidden="true"
+                class="size-6 text-white"
+              >
+                <path
+                  d="M6 18 18 6M6 6l12 12"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="mt-6 flow-root">
+            <div class="-my-6">
+              <div class="space-y-2 py-6 font-Electrolize uppercase">
+                <details>
+                  <summary
+                    class="cursor-pointer rounded-lg py-2 text-base/7 text-white"
+                  >
+                    I can help with...
+                  </summary>
+                  <div class="ml-4 mt-2 space-y-1">
+                    <a
+                      href="/process/approach"
+                      class="block px-3 py-1 text-sm text-white/80"
+                      >Saving time</a
+                    >
+                    <a
+                      href="/process/tools"
+                      class="block px-3 py-1 text-sm text-white/80"
+                      >Technical expertise</a
+                    >
+                    <a
+                      href="/process/timeline"
+                      class="block px-3 py-1 text-sm text-white/80"
+                      >Starting your project</a
+                    >
+                  </div>
+                </details>
+
+                <a
+                  href="/work-process"
+                  class="block rounded-lg py-2 text-base/7 text-white"
+                  >Process</a
+                >
+
+                <a
+                  href="/portfolio-web-developer"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base/7 text-white"
+                  >Work</a
+                >
+
+                <a
+                  href="/testimonials"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base/7 text-white"
+                  >Testimonials</a
+                >
+
+                <a
+                  href="/faq-freelance-web-developer"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base/7 text-white"
+                  >Faq</a
+                >
+
+                <a
+                  href="/about-nina-presotto"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base/7 text-white"
+                  >About</a
+                >
+              </div>
+
+              <div>
+                <a
+                  href="/contact"
+                  class="text-sm/6 text-dark uppercase font-semibold bg-earth-500 px-2"
+                >
+                  Contact
+                </a>
+              </div>
+            </div>
+          </div>
+        </el-dialog-panel>
+      </div>
+    </dialog>
+  </el-dialog>
+</header>

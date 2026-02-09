@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1"
+      type="module"
+    ></script>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="bg-dark">
+    <main
+      class="mx-auto flex max-w-7xl h-screen flex flex-col justify-center items-center"
+    >
+      <header class="mb-10">
+        <nav aria-label="Global" class="p-6 lg:px-8">
+          <div>
+            <div
+              class="md:mb-1 inline-block md:text-[31px]/8 text-cream font-MontreuxBrandingBold uppercase tracking-wide"
+            >
+              Nina Presotto
+            </div>
+            <div>
+              <span
+                class="font-MontreuxBrandingBold text-xs/4 md:text-[15px]/4 text-dark pt-1 px-1 bg-earth-500 uppercase"
+              >
+                Coding the way forward
+              </span>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section>
+        <div>
+          <div>
+            <h1
+              class="text-3xl/9 sm:text-7xl font-Montserrat font-bold uppercase text-balance md:max-w-5xl text-earth-500"
+            >
+              Coming Soon
+            </h1>
+            <h2
+              class="mt-4 text-md sm:text-xl text-white font-Montserrat font-semibold text-pretty max-w-xs sm:max-w-md md:max-w-xl"
+            >
+              Stay tuned
+            </h2>
+            <div class="my-5 max-w-xs">
+              <ul class="font-Montserrat">
+                <li class="border-b-2 border-white">
+                  <a
+                    href=""
+                    class="text-sm inline-block uppercase font-light py-1 tracking-wider cursor-none"
+                    >Sites web</a
+                  >
+                </li>
+                <li class="border-b-2 border-white">
+                  <a
+                    href=""
+                    class="text-sm inline-block uppercase font-light py-1 tracking-wider cursor-none"
+                    >Complex web applications</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="text-sm inline-block uppercase font-light py-1 tracking-wider cursor-none"
+                    >AI Chatbots</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="mt-10 flex gap-x-6">
+              <button
+                id="notify-btn"
+                class="px-2 pt-2 pb-2 text-dark hover:text-earth-500 transition border-earth-500 bg-earth-500 hover:bg-cream"
+              >
+                <span class="uppercase font-bold tracking wider text-md/3">
+                  Notify me when it's live.
+                </span>
+              </button>
+              <form
+                id="notify-form"
+                class="hidden flex flex-col gap-3 max-w-xs"
+              >
+                <input
+                  type="email"
+                  id="notify-email"
+                  required
+                  placeholder="Your email"
+                  class="px-3 py-2 rounded bg-white text-dark font-Montserrat placeholder:text-gray-500"
+                />
+                <p
+                  id="notify-error"
+                  class="hidden text-red-500 text-sm mt-1 font-Montserrat"
+                >
+                  Please enter a valid email address.
+                </p>
+                <button
+                  type="submit"
+                  class="px-2 pt-2 pb-2 text-dark bg-earth-500 hover:bg-cream hover:text-earth-500 transition uppercase font-bold"
+                >
+                  Send
+                </button>
+              </form>
+
+              <p
+                id="notify-thanks"
+                class="hidden mt-6 text-cream font-Montserrat text-lg"
+              >
+                Thank you! You’ll be notified.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      const btn = document.getElementById("notify-btn");
+      const form = document.getElementById("notify-form");
+      const thanks = document.getElementById("notify-thanks");
+      const emailInput = document.getElementById("notify-email");
+      const errorMsg = document.getElementById("notify-error");
+
+      btn.addEventListener("click", () => {
+        btn.classList.add("hidden");
+        form.classList.remove("hidden");
+      });
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const email = emailInput.value.trim();
+
+        if (email.length === 0) {
+          showError("Please enter your email.");
+          return;
+        }
+
+        const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+        if (!valid) {
+          showError("Please enter a valid email address.");
+          return;
+        }
+
+        hideError();
+
+        const mailto = `mailto:contact@ninapresotto.com?subject=Notify me when your website is live&body=My email: ${encodeURIComponent(
+          email
+        )}`;
+        window.location.href = mailto;
+
+        form.classList.add("hidden");
+        thanks.classList.remove("hidden");
+      });
+
+      function showError(message) {
+        errorMsg.textContent = message;
+        errorMsg.classList.remove("hidden");
+        emailInput.classList.add("border-red-500");
+      }
+
+      function hideError() {
+        errorMsg.classList.add("hidden");
+        emailInput.classList.remove("border-red-500");
+      }
+    </script>
+  </body>
+</html>
