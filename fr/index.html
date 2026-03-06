@@ -1,17 +1,18 @@
 <!doctype html>
 <html lang="fr">
   <head>
+    <load src="/src/partials/gtaghead.html" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
       Nina Presotto | Senior Technical Partner | Web Development & Strategy
     </title>
+    <load src="/src/partials/ogmeta-fr.html" />
     <meta
       name="description"
-      content="Développeur web freelance avec 25 ans d'expérience. Expert Symfony et WordPress, je réalise vos projets complexes et solutions en marque blanche."
+      content="Senior Technical Partner avec 25 ans d’expérience. Expert Symfony et WordPress pour vos projets complexes et solutions en marque blanche. Donnons vie à votre projet."
     />
-    <link rel="canonical" href="https://ninapresotto.com/" />
-    <link href="/src/style.css" rel="stylesheet" />
+    <link rel="canonical" href="https://ninapresotto.com/fr/" />
     <link rel="alternate" hreflang="fr" href="https://ninapresotto.com/fr/" />
     <link rel="alternate" hreflang="en" href="https://ninapresotto.com/" />
     <link
@@ -19,15 +20,11 @@
       hreflang="x-default"
       href="https://ninapresotto.com/"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1"
-      type="module"
-    ></script>
-    <script type="module" src="/src/main.js"></script>
+    <load src="/src/partials/enqueue.html" />
+    <load src="/src/partials/schemaPerson-fr.html" />
   </head>
   <body class="bg-dark" data-page-title="Home Page">
-    <load src="src/partials/fr/header.html" />
-    <!--     <div id="breadcrumb" class="p-4 bg-white">Home</div> -->
+    <load src="/src/partials/header-fr.html" />
     <main class="mt-16 lg:mt-30">
       <section
         class="sm:mt-30 sm:mb-30 mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8"
@@ -38,78 +35,60 @@
               <p
                 class="font-Electrolize text-sm/7 tracking-widest font-light uppercase text-white"
               >
-                Solutions start with code
+                Les solutions naissent du code
               </p>
-              <!--  <h1
+              <div
                 class="text-3xl/9 sm:text-7xl font-Montserrat font-bold uppercase text-balance md:max-w-5xl text-earth-500"
               >
-                Fast, reliable, development, stress free, delivered on time
-              </h1> -->
-              <h1
-                class="text-3xl/9 sm:text-7xl font-Montserrat font-bold uppercase text-balance md:max-w-5xl text-earth-500"
-              >
-                Senior Web Architect & Developer: Building High-Performance
-                Digital Solutions
-              </h1>
-              <!--   <h2
-                class="mt-4 text-md sm:text-xl text-white font-Montserrat font-semibold text-pretty max-w-xs sm:max-w-md md:max-w-xl"
-              >
-                I design, develop, and deploy fast, reliable, and easy-to-use
-                tools to help you sell more and automate your key tasks.
-              </h2> -->
+                Développement fiable
+                <h1 class="text-2xl block font-semibold">
+                  Senior Web Architect & Developer
+                </h1>
+                et sans stress. Livré à temps.
+              </div>
               <h2
                 class="mt-4 text-md sm:text-xl text-white font-Montserrat font-semibold text-pretty max-w-xs sm:max-w-md md:max-w-xl"
               >
-                From custom Symfony applications to expert WordPress themes and
-                AI-powered automations, I deliver scalable tech solutions that
-                streamline your business and boost your growth.
+                Je conçois, développe et lance des outils rapides, stables et
+                intuitifs pour vous aider à vendre davantage et à automatiser
+                vos tâches essentielles.
               </h2>
               <div class="my-5 max-w-md">
                 <ul class="font-Electrolize text-white">
                   <li class="border-b-2 border-white">
                     <a
-                      href=""
-                      class="text-sm inline-block uppercase font-light py-2 tracking-wider cursor-default"
-                      >Custom Websites & WordPress Expertise</a
+                      href="/fr/services/votre-partenaire-technique/#websites"
+                      class="text-sm inline-block uppercase font-light py-2 tracking-wider hover:text-earth-500 hover:font-semibold"
+                      >Sites web sur mesure et expertise WordPress.</a
                     >
                   </li>
                   <li class="border-b-2 border-white">
                     <a
-                      href=""
-                      class="text-sm inline-block uppercase font-light py-2 tracking-wider cursor-default"
-                      >Complex Web Applications (Symfony)</a
+                      href="/fr/services/votre-partenaire-technique/#complex-web-applications"
+                      class="text-sm inline-block uppercase font-light py-2 tracking-wider hover:text-earth-500 hover:font-semibold"
+                      >Applications web complexes (Symfony)</a
                     >
                   </li>
                   <li class="border-b-2 border-white">
                     <a
-                      href=""
-                      class="text-sm inline-block uppercase font-light py-2 tracking-wider cursor-default"
-                      >Compliance, Security & Accessibility</a
-                    >
-                  </li>
-                  <li class="border-b-2 border-white">
-                    <a
-                      href=""
-                      class="text-sm inline-block uppercase font-light py-2 tracking-wider cursor-default"
-                      >AI Chatbots & Business Automation</a
+                      href="/fr/services/votre-partenaire-technique/#conformite-rgpd"
+                      class="text-sm inline-block uppercase font-light py-2 tracking-wider hover:text-earth-500 hover:font-semibold"
+                      >Conformité RGPD</a
                     >
                   </li>
                 </ul>
               </div>
               <div class="mt-10 flex gap-x-6">
                 <a
-                  href="#"
+                  href="https://calendly.com/contact-ninapresotto/30min"
                   class="block px-2 py-1 text-dark transition-all bg-earth-500 hover:bg-transparent hover:text-white hover:underline uppercase font-bold tracking wider text-md/3"
-                  >Book an intro call
+                  >Réserver un appel
                 </a>
-                <!--  <a href="#" class="text-sm/6 font-semibold text-gray-900"
-                  >Learn more <span aria-hidden="true">→</span></a
-                > -->
               </div>
               <div
                 class="block text-sm font-light tracking wider text-cream mt-2"
               >
-                Friendly, chat, No pressure
+                Échange informel, sans engagement.
               </div>
             </div>
           </div>
@@ -120,37 +99,39 @@
       >
         <div class="relative isolate">
           <div>
-            <p
+            <h2
               class="text-3xl/9 sm:text-7xl font-Montserrat font-bold uppercase text-earth-500 text-balance"
             >
-              Where are you today in your project ?
-            </p>
-            <h2
+              Ou en êtes vous dans votre projet ?
+            </h2>
+            <h3
               class="mt-1 text-lg font-Montserrat text-pretty sm:text-xl/8 tracking-wide text-white"
             >
-              Why do you need a professionnal ?
-            </h2>
+              Pourquoi vous avez besoin d'un professionnel ?
+            </h3>
             <div
               class="mt-12 font-Montserrat grid grid-cols-1 md:grid-cols-3 gap-6 text-white"
             >
               <div
                 class="flex flex-col p-5 lg:py-10 lg:px-15 bg-white/10 text-center"
               >
-                <h3 class="font-bold text-lg mb-1">You want to save time</h3>
+                <h3 class="font-bold text-lg mb-1">
+                  Vous voulez gagner du temps
+                </h3>
                 <p
                   class="text-sm text-balance mb-5 sm:max-md:max-w-1/2 sm:mx-auto"
                 >
-                  Outsource your web projects in white label: I handle the
-                  development (WordPress, Symfony, e-commerce) while you keep
-                  the client relationship. Technical expertise without hiring,
-                  deadlines respected, complete discretion.
+                  Sous-traitez vos projets web en marque blanche : je gère le
+                  développement pendant que vous conservez la relation client.
+                  Expertise technique sans recrutement, délais respectés,
+                  discrétion totale.
                 </p>
                 <div class="flex justify-center mt-auto">
                   <a
-                    href="/white-label-web-outsourcing"
+                    href="/fr/services/externaliser-en-marque-blanche/"
                     class="self-start font-Montserrat font-bold bg-earth-500 text-dark min-w-48 sm:min-w-40 uppercase px-5 py-1 text-sm tracking-wide hover:bg-transparent hover:text-white hover:underline transition-all"
                   >
-                    Delegate
+                    Déléguez
                   </a>
                 </div>
               </div>
@@ -158,22 +139,24 @@
               <div
                 class="flex flex-col p-5 lg:py-10 lg:px-15 bg-white/10 text-center"
               >
-                <h3 class="font-bold text-lg mb-1">You need an expert</h3>
+                <h3 class="font-bold text-lg mb-1">
+                  Vous recherchez un partenaire technique
+                </h3>
                 <p
                   class="text-sm text-balance mb-5 sm:max-md:max-w-1/2 sm:mx-auto"
                 >
-                  Freelance developer with 25 years of experience, I turn your
-                  vision into a high-performance website. WordPress, Symfony,
-                  PHP: from responsive front-end to complex debugging, I deliver
-                  clean code, strong security, and SEO optimization for
-                  long-lasting web projects.
+                  Développeur freelance avec 25 ans d'expérience, je transforme
+                  votre vision en un site web performant. WordPress, Symfony,
+                  PHP : du front-end responsive au débogage complexe, je livre
+                  un code propre, une sécurité renforcée et une optimisation SEO
+                  pour des projets web durables.
                 </p>
                 <div class="flex justify-center mt-auto">
                   <a
-                    href="/i-am-your-technical-partner"
+                    href="/fr/services/votre-partenaire-technique/"
                     class="block self-start bg-earth-500 uppercase px-5 py-1 min-w-48 sm:min-w-40 text-sm tracking-wide text-dark font-bold transition-all hover:bg-transparent hover:text-white hover:underline"
                   >
-                    Ask
+                    Les Services
                   </a>
                 </div>
               </div>
@@ -181,22 +164,25 @@
               <div
                 class="flex flex-col p-5 lg:py-10 lg:px-15 bg-white/10 text-center"
               >
-                <h3 class="font-bold text-lg mb-1">You need help to start</h3>
+                <h3 class="font-bold text-lg mb-1">
+                  Vous avez besoin d'aide pour démarrer
+                </h3>
                 <p
                   class="text-sm text-balance mb-5 sm:max-md:max-w-1/2 sm:mx-auto"
                 >
-                  You have an idea but don’t know where to start? I turn your
-                  concept into a concrete action plan. Goal definition,
-                  specifications, interactive mockups, and technical planning: I
-                  structure your web project methodically, working alongside
-                  design and SEO specialists.
+                  Vous avez une idée mais ne savez pas par où commencer ? Je
+                  transforme votre concept en un plan d'action concret.
+                  Définition des objectifs, cahier des charges, maquettes
+                  interactives et planification technique : je structure votre
+                  projet web avec méthode, en collaboration avec des
+                  spécialistes du design et du SEO.
                 </p>
                 <div class="flex justify-center mt-auto">
                   <a
-                    href="/define-your-web-project"
+                    href="/fr/services/demarrer-votre-projet/"
                     class="block self-start bg-earth-500 uppercase px-5 py-1 min-w-48 sm:min-w-40 text-sm tracking-wide text-dark font-bold transition-all hover:bg-transparent hover:text-white hover:underline"
                   >
-                    Begin
+                    Démarrer
                   </a>
                 </div>
               </div>
@@ -216,51 +202,51 @@
           <h3
             class="mt-1 text-lg font-Montserrat text-pretty sm:text-xl/8 tracking-wide"
           >
-            I specialize in the latest technologies and modern development
-            standards.
+            Je me spécialise dans les dernières technologies et les standards de
+            développement modernes.
           </h3>
           <div class="my-8 sm:flex sm:justify-between sm:max-w-none sm:gap-4">
             <ul class="font-Electrolize sm:w-1/2">
               <li class="border-b-2 border-white">
                 <a
-                  href="/i-am-your-technical-partner#php"
+                  href="/fr/services/votre-partenaire-technique/#php"
                   class="text-sm inline-block uppercase font-light py-2 tracking-wider transition-all text-white hover:text-earth-500 hover:font-semibold"
                   >PHP</a
                 >
               </li>
               <li class="border-b-2 border-white">
                 <a
-                  href="/i-am-your-technical-partner#front-end"
+                  href="/fr/services/votre-partenaire-technique/#front-end"
                   class="text-sm inline-block uppercase font-light py-2 tracking-wider transition-all text-white hover:text-earth-500 hover:font-semibold"
                   >HTML</a
                 >
               </li>
               <li class="border-b-2">
                 <a
-                  href="/i-am-your-technical-partner#front-end"
+                  href="/fr/services/votre-partenaire-technique/#front-end"
                   class="text-sm inline-block uppercase font-light py-2 tracking-wider transition-all text-white hover:text-earth-500 hover:font-semibold"
                   >CSS</a
                 >
               </li>
             </ul>
-            <ul class="font-Montserrat sm:w-1/2">
+            <ul class="font-Electrolize sm:w-1/2">
               <li class="border-b-2 border-white">
                 <a
-                  href="/i-am-your-technical-partner#front-end"
+                  href="/fr/services/votre-partenaire-technique/#front-end"
                   class="text-sm inline-block uppercase font-light py-2 tracking-wider transition-all text-white hover:text-earth-500 hover:font-semibold"
                   >JS</a
                 >
               </li>
               <li class="border-b-2 border-white">
                 <a
-                  href="/i-am-your-technical-partner#wordpress"
+                  href="/i-am-your-technical-partner/#wordpress"
                   class="text-sm inline-block uppercase font-light py-2 tracking-wider transition-all text-white hover:text-earth-500 hover:font-semibold"
                   >WORDPRESS EXPERT</a
                 >
               </li>
               <li class="border-b-2">
                 <a
-                  href="/i-am-your-technical-partner#symfony"
+                  href="/fr/services/votre-partenaire-technique/#symfony"
                   class="text-sm inline-block uppercase font-light py-2 tracking-wider transition-all text-white hover:text-earth-500 hover:font-semibold"
                   >SYMFONY</a
                 >
@@ -273,16 +259,16 @@
         class="my-20 sm:my-40 mx-auto lg:px-8 flex max-w-7xl items-center justify-between px-6 lg:px-8"
       >
         <div class="relative isolate">
-          <p
+          <h2
             class="text-3xl/9 sm:text-7xl font-Montserrat font-bold uppercase text-earth-500 text-balance"
           >
-            Why Working with me ?
-          </p>
-          <h2
+            Pourquoi travailler avec moi ?
+          </h2>
+          <h3
             class="mt-1 text-lg font-Montserrat text-pretty sm:text-xl/8 tracking-wide text-white"
           >
-            The Process
-          </h2>
+            Le Process
+          </h3>
           <div>
             <div
               class="mt-12 font-Montserrat w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 items-stretch"
@@ -292,7 +278,7 @@
                 class="relative flex flex-col md:flex-row border border-white p-5 bg-white/10 text-white transition-all hover:text-earth-500 hover:border-earth-500 hover:bg-dark"
               >
                 <a
-                  href="/work-process#initial-meeting"
+                  href="/fr/process/#rencontre-initiale"
                   class="absolute inset-0 z-30"
                   aria-label="Go to section"
                 ></a>
@@ -302,17 +288,17 @@
                 </div>
 
                 <div class="relative md:pl-8 flex flex-col flex-grow">
-                  <h3 class="font-bold text-lg">First talk</h3>
+                  <h3 class="font-bold text-lg">Premier échange</h3>
 
                   <p class="text-sm text-balance mb-3">
-                    Ask the right questions to understand well
+                    Poser les bonnes questions
                   </p>
 
                   <div class="mt-auto flex justify-end">
                     <span
                       class="mt-1 font-Electrolize uppercase flex justify-center items-center shadow-xs text-2xl"
                     >
-                      <span class="sr-only">Discover How</span>
+                      <span class="sr-only">Découvrir</span>
                       <i class="fa-solid fa-arrow-right"></i>
                     </span>
                   </div>
@@ -324,7 +310,7 @@
                 class="relative flex flex-col md:flex-row border border-white p-5 bg-white/10 text-white transition-all hover:text-earth-500 hover:border-earth-500 hover:bg-dark"
               >
                 <a
-                  href="/work-process#action-plan"
+                  href="/fr/process/#plan-action"
                   class="absolute inset-0 z-30"
                   aria-label="Go to section"
                 ></a>
@@ -333,15 +319,15 @@
                   2
                 </div>
                 <div class="relative md:pl-8 flex flex-col flex-grow">
-                  <h3 class="font-bold text-lg">Plan and quote</h3>
+                  <h3 class="font-bold text-lg">Planification et devis</h3>
                   <p class="text-sm text-balance mb-5">
-                    Plan all the steps and make a realistic estimation
+                    Planifier les étapes et devis réaliste
                   </p>
                   <div class="mt-auto flex justify-end">
                     <span
                       class="mt-1 font-Electrolize uppercase flex justify-center items-center shadow-xs text-2xl"
                     >
-                      <span class="sr-only">Discover How</span>
+                      <span class="sr-only">Découvrir</span>
                       <i class="fa-solid fa-arrow-right"></i>
                     </span>
                   </div>
@@ -353,7 +339,7 @@
                 class="relative flex flex-col md:flex-row border border-white p-5 bg-white/10 text-white transition-all hover:text-earth-500 hover:border-earth-500 hover:bg-dark"
               >
                 <a
-                  href="/work-process#prepare-organize"
+                  href="/fr/process/#preparation-organisation"
                   class="absolute inset-0 z-30"
                   aria-label="Go to section"
                 ></a>
@@ -362,15 +348,15 @@
                   3
                 </div>
                 <div class="relative md:pl-8 flex flex-col flex-grow">
-                  <h3 class="font-bold text-lg">Prepare and organize</h3>
+                  <h3 class="font-bold text-lg">Preparation et organisation</h3>
                   <p class="text-sm text-balance mb-5">
-                    Clear organization, real-time tracking, smooth project.
+                    Organisation claire, suivi en temps réel, projet fluide.
                   </p>
                   <div class="mt-auto flex justify-end">
                     <span
                       class="mt-1 font-Electrolize uppercase flex justify-center items-center shadow-xs text-2xl"
                     >
-                      <span class="sr-only">Discover How</span>
+                      <span class="sr-only">Découvrir</span>
                       <i class="fa-solid fa-arrow-right"></i>
                     </span>
                   </div>
@@ -382,7 +368,7 @@
                 class="relative flex flex-col md:flex-row border border-white p-5 bg-white/10 text-white transition-all hover:text-earth-500 hover:border-earth-500 hover:bg-dark"
               >
                 <a
-                  href="/work-process#coding"
+                  href="/fr/process/#developpement"
                   class="absolute inset-0 z-30"
                   aria-label="Go to section"
                 ></a>
@@ -391,10 +377,8 @@
                   4
                 </div>
                 <div class="relative md:pl-8 flex flex-col flex-grow">
-                  <h3 class="font-bold text-lg">Coding</h3>
-                  <p class="text-sm text-balance mb-5">
-                    This is the implementation phase
-                  </p>
+                  <h3 class="font-bold text-lg">Développement</h3>
+                  <p class="text-sm text-balance mb-5">Implementation</p>
                   <div class="mt-auto flex justify-end">
                     <span
                       class="mt-1 font-Electrolize uppercase flex justify-center items-center shadow-xs text-2xl"
@@ -411,7 +395,7 @@
                 class="relative flex flex-col md:flex-row border border-white p-5 bg-white/10 text-white transition-all hover:text-earth-500 hover:border-earth-500 hover:bg-dark"
               >
                 <a
-                  href="/work-process#implementation"
+                  href="/work-process/#validation"
                   class="absolute inset-0 z-30"
                   aria-label="Go to section"
                 ></a>
@@ -420,15 +404,15 @@
                   5
                 </div>
                 <div class="relative md:pl-8 flex flex-col flex-grow">
-                  <h3 class="font-bold text-lg">Validation and adjustments</h3>
+                  <h3 class="font-bold text-lg">Validation et adjustments</h3>
                   <p class="text-sm text-balance mb-5">
-                    This is the implementation phase
+                    Derniers ajustements avant mise en production
                   </p>
                   <div class="mt-auto flex justify-end">
                     <span
                       class="mt-1 font-Electrolize uppercase flex justify-center items-center shadow-xs text-2xl"
                     >
-                      <span class="sr-only">Discover How</span>
+                      <span class="sr-only">Découvrir</span>
                       <i class="fa-solid fa-arrow-right"></i>
                     </span>
                   </div>
@@ -440,7 +424,7 @@
                 class="relative flex flex-col md:flex-row border border-white p-5 bg-white/10 text-white transition-all hover:text-earth-500 hover:border-earth-500 hover:bg-dark"
               >
                 <a
-                  href="/work-process#going-live"
+                  href="/fr/process/#mise-en-production"
                   class="absolute inset-0 z-30"
                   aria-label="Go to section"
                 ></a>
@@ -449,13 +433,15 @@
                   6
                 </div>
                 <div class="relative md:pl-8 flex flex-col flex-grow">
-                  <h3 class="font-bold text-lg">Going live</h3>
-                  <p class="text-sm text-balance mb-5">Project is ready</p>
+                  <h3 class="font-bold text-lg">Mise en production</h3>
+                  <p class="text-sm text-balance mb-5">
+                    Le projet est prêt à être mis en ligne
+                  </p>
                   <div class="mt-auto flex justify-end">
                     <span
                       class="mt-1 font-Electrolize uppercase flex justify-center items-center shadow-xs text-2xl"
                     >
-                      <span class="sr-only">Discover How</span>
+                      <span class="sr-only">Découvrir</span>
                       <i class="fa-solid fa-arrow-right"></i>
                     </span>
                   </div>
@@ -467,7 +453,7 @@
                 class="relative flex flex-col md:flex-row border border-white p-5 bg-white/10 text-white transition-all hover:text-earth-500 hover:border-earth-500 hover:bg-dark"
               >
                 <a
-                  href="/work-process#maintenance"
+                  href="/fr/process/#maintenance"
                   class="absolute inset-0 z-30"
                   aria-label="Go to section"
                 ></a>
@@ -476,15 +462,15 @@
                   7
                 </div>
                 <div class="relative md:pl-8 flex flex-col flex-grow">
-                  <h3 class="font-bold text-lg">Monitoring and maintenance</h3>
+                  <h3 class="font-bold text-lg">Suivi et maintenance</h3>
                   <p class="text-sm text-balance mb-5">
-                    Project remains efficient and secure in the long term.
+                    Le projet reste performant et sécurisé sur le long terme.
                   </p>
                   <div class="mt-auto flex justify-end">
                     <span
                       class="mt-1 font-Electrolize uppercase flex justify-center items-center shadow-xs text-2xl"
                     >
-                      <span class="sr-only">Discover How</span>
+                      <span class="sr-only">Découvrir</span>
                       <i class="fa-solid fa-arrow-right"></i>
                     </span>
                   </div>
@@ -498,16 +484,16 @@
         class="my-20 sm:my-40 mx-auto lg:px-8 flex max-w-7xl items-center justify-between px-6 lg:px-8"
       >
         <div class="relative isolate">
-          <p
+          <h2
             class="text-3xl/9 sm:text-7xl font-Montserrat font-bold uppercase text-earth-500 text-balance"
           >
-            What clients say ?
-          </p>
-          <h2
+            Qu'est ce que les clients disent ?
+          </h2>
+          <p
             class="mt-1 text-lg font-Montserrat text-pretty sm:text-xl/8 tracking-wide text-white"
           >
-            80 Real feedbacks from real projects
-          </h2>
+            80 vrais feedbacks de vrais projets
+          </p>
           <div>
             <div
               class="mt-12 font-Montserrat w-fullgrid gap-6 grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch"
@@ -540,7 +526,7 @@
                   class="flex-1 text-pretty text-base leading-relaxed text-white"
                 >
                   "Tout s'est bien passé avec Nina, nous avons travaillé pour la
-                  mise en ligne d'un site carrière sur Wordpress. <br />Elle a
+                  mise en ligne d'un site carrière sur Wordpress.<br />Elle a
                   été très réactive face à mes nombreuses demandes, m'a proposé
                   des solutions en cas de difficultés et a su se montrer
                   pédagogue."
@@ -551,7 +537,10 @@
                     Coraline Perlini
                   </div>
                   <div class="mt-1 text-sm text-white">
-                    Responsable développement RH chez celio
+                    Responsable développement RH chez
+                    <a href="https://celio-talents.com" class="underline"
+                      >celio</a
+                    >
                   </div>
                 </div>
                 <div
@@ -562,6 +551,7 @@
                   ></div>
                 </div>
               </div>
+
               <div
                 class="group relative flex flex-col gap-6 border-2 border-white/50 bg-[#1a4d4d]/40 p-8 backdrop-blur-sm transition-all duration-300"
               >
@@ -599,7 +589,12 @@
                     Nadia Mpote
                   </div>
                   <div class="mt-1 text-sm text-white">
-                    Responsable du développement chez TBC Innovations
+                    Responsable du développement à
+                    <a
+                      href="https://www.tbcinnovation.fr/nos-etudes/"
+                      class="underline"
+                      >TBC Innovations</a
+                    >
                   </div>
                 </div>
                 <div
@@ -610,6 +605,7 @@
                   ></div>
                 </div>
               </div>
+
               <div
                 class="group relative flex flex-col gap-6 border-2 border-white/50 bg-[#1a4d4d]/40 p-8 backdrop-blur-sm transition-all duration-300"
               >
@@ -653,7 +649,10 @@
                     Julien Hamilius
                   </div>
                   <div class="mt-1 text-sm text-white">
-                    President & Co-Founder @ Urbyn | Circular Economy
+                    Président & Co-Fondateur @
+                    <a href="https://www.urbyn.co/" class="underline"
+                      >Urbyn | Circular Economy></a
+                    >
                   </div>
                 </div>
                 <div
@@ -666,12 +665,13 @@
               </div>
             </div>
           </div>
+
           <div class="flex justify-center my-8">
             <a
-              href="/testimonials"
+              href="/testimonials/"
               class="self-start font-Montserrat font-bold bg-earth-500 text-dark min-w-48 sm:min-w-40 uppercase px-5 py-1 text-sm tracking-wide transition-all hover:bg-transparent hover:text-white hover:underline"
             >
-              All testimonials
+              Voir tous les témoignages
             </a>
           </div>
         </div>
@@ -901,6 +901,6 @@
         </div>
       </section> -->
     </main>
-    <load src="src/partials/fr/footer.html" />
+    <load src="/src/partials/footer.html" />
   </body>
 </html>

@@ -1,0 +1,10 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+	<defs>
+		<image  width="32" height="32" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAAAXNSR0IB2cksfwAAAANQTFRFBDs3JHzfMQAAAA9JREFUeJxjZAACxsFLAAAK8AAhCVrP+AAAAABJRU5ErkJggg=="/>
+		<image  width="26" height="7" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAHAQMAAAAszM/IAAAAAXNSR0IB2cksfwAAAANQTFRFz5CDOHm0JwAAAA5JREFUeJxjZAACRrwEAACvAAgGt9mHAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="Calque 2" href="#img1" x="0" y="0"/>
+	<use id="Calque 1" href="#img2" x="3" y="13"/>
+</svg>

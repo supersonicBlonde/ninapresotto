@@ -1,14 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/src/style.css" rel="stylesheet" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1"
-      type="module"
-    ></script>
-    <script type="module" src="/src/main.js"></script>
+    <load src="/src/partials/enqueue.html" />
   </head>
   <body class="bg-dark">
     <main
@@ -146,7 +141,7 @@
         hideError();
 
         const mailto = `mailto:contact@ninapresotto.com?subject=Notify me when your website is live&body=My email: ${encodeURIComponent(
-          email
+          email,
         )}`;
         window.location.href = mailto;
 

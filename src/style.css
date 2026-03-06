@@ -20,7 +20,6 @@
 }
 
 @theme {
-
   --color-pink-500: oklch(0.8095 0.0753 355.11);
   --color-cream: oklch(0.8849 0.0234 34.3);
   --color-cream-bright: oklch(0.93 0.03 34.3);
@@ -36,6 +35,29 @@
   --font-FuturaRennerRegular : "FuturaRennerRegular", sans-serif;
   --font-MontreuxBrandingBold : "MontreuxBranding-Bold", sans-serif;
   --color-text: oklch(0.9945 0.0158 102.82);
+}
+
+
+.lang-switcher:hover {
+  transform: translate(1px,1px);
+}
+
+.bg-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Derrière tout le monde */
+  pointer-events: none; /* Laisse passer les clics vers ton header/boutons */
+  overflow: hidden;
+}
+
+.bg-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  transform: scale(1.1); /* Évite les bords blancs potentiels lors du redimensionnement */
 }
 
 body {
@@ -188,4 +210,101 @@ a.with-hover {
 }
 
 
+#tarteaucitronRoot #tarteaucitronAlertBig {
+   background: #043B37!important;
+   border-top: 2px solid #CF9083;
+}
 
+#tarteaucitronDisclaimerAlert {
+  @apply !text-white;
+}
+
+.tarteaucitronCTAButton {
+  @apply !bg-earth-500 !text-white;
+}
+
+#tarteaucitronCloseAlert {
+  @apply !bg-white !text-dark
+}
+
+.tarteaucitronCheck::before {
+    font-family: "Segoe UI Symbol", "Apple Symbols", sans-serif !important;
+}
+
+#tarteaucitron #tarteaucitronServices .tarteaucitronLine {
+    @apply !bg-dark !text-white; 
+}
+
+tarteaucitronClosePanel {
+  @apply !bg-dark !text-white;
+}
+
+#tarteaucitron #tarteaucitronClosePanel,#tarteaucitronAlertSmall #tarteaucitronCookiesListContainer #tarteaucitronClosePanelCookie {
+  @apply !bg-dark !text-white;
+}
+
+#tarteaucitronRoot .tarteaucitronH1 {
+   @apply !text-white;
+}
+
+#tarteaucitron #tarteaucitronInfo,#tarteaucitron #tarteaucitronServices .tarteaucitronDetails,#tarteaucitron #tarteaucitronServices .tarteaucitronTitle button,#tarteaucitronRoot .asCatToggleBtn {
+   @apply !bg-dark !text-white border-earth-500;
+}
+
+#tarteaucitron #tarteaucitronServices #tarteaucitronAllAllowed.tarteaucitronIsSelected,#tarteaucitron #tarteaucitronServices #tarteaucitronAllDenied.tarteaucitronIsSelected,#tarteaucitron #tarteaucitronServices #tarteaucitronAllDenied2.tarteaucitronIsSelected {
+    @apply !bg-earth-500 !text-dark;
+}
+
+#tarteaucitron #tarteaucitronServices #tarteaucitronServices_mandatory .tarteaucitronLine button.tarteaucitronAllow,#tarteaucitron #tarteaucitronServices .tarteaucitronLine.tarteaucitronIsAllowed .tarteaucitronAllow,#tarteaucitron #tarteaucitronServices .tarteaucitronLine.tarteaucitronIsDenied .tarteaucitronDeny {
+     @apply !bg-earth-500 !text-dark;
+}
+
+#tarteaucitron #tarteaucitronServices .tarteaucitronLine .tarteaucitronAsk .tarteaucitronAllow,#tarteaucitron #tarteaucitronServices .tarteaucitronLine .tarteaucitronAsk .tarteaucitronDeny,.tac_activate .tarteaucitronAllow {
+     @apply !bg-earth-500 !text-dark;
+}
+
+#tarteaucitronRoot .tarteaucitronAllow, #tarteaucitronRoot .tarteaucitronDeny{
+     @apply !bg-earth-500 !text-dark;
+}
+
+
+#tarteaucitronRoot .tarteaucitronH2 {
+     @apply !text-white;
+}
+
+#tarteaucitronRoot * {
+     @apply !text-white;
+}
+
+html body #tarteaucitronRoot div#tarteaucitronSave {
+    @apply !bg-dark !text-white;
+}
+
+#tarteaucitronPrivacyUrlDialog {
+   @apply !bg-earth-500 !text-dark;
+}
+
+#tarteaucitronRoot ::-webkit-scrollbar {
+  width: 8px;
+}
+
+#tarteaucitronRoot ::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+#tarteaucitronRoot ::-webkit-scrollbar-thumb {
+  @apply !bg-earth-500;
+  border-radius: 3px;
+}
+
+#tarteaucitronCloseAlert {
+   @apply !bg-earth-500 !text-dark;
+}
+
+#tarteaucitronAlertBig {
+  @apply max-md:!flex flex-col gap-4 max-sm:!items-center;
+} 
+
+#tarteaucitronAlertBig span {
+  @apply max-sm:!text-center;
+} 
