@@ -235,13 +235,14 @@ a.with-hover {
     @apply !bg-dark !text-white; 
 }
 
-tarteaucitronClosePanel {
+.tarteaucitronClosePanel {
   @apply !bg-dark !text-white;
 }
 
 #tarteaucitron #tarteaucitronClosePanel,#tarteaucitronAlertSmall #tarteaucitronCookiesListContainer #tarteaucitronClosePanelCookie {
   @apply !bg-dark !text-white;
 }
+
 
 #tarteaucitronRoot .tarteaucitronH1 {
    @apply !text-white;
@@ -302,7 +303,7 @@ html body #tarteaucitronRoot div#tarteaucitronSave {
 }
 
 #tarteaucitronAlertBig {
-  @apply max-md:!flex flex-col gap-4 max-sm:!items-center;
+  @apply max-md:!flex flex-col gap-4 max-sm:!items-center pointer-events-none;
 } 
 
 #tarteaucitronAlertBig span {

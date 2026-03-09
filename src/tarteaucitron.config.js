@@ -1,4 +1,9 @@
 export const initTarteaucitron = () => {
+  if (typeof tarteaucitron === "undefined") {
+    console.error("tarteaucitron n'est pas chargé !");
+    return;
+  }
+
   const lang = document.documentElement.lang.slice(0, 2) || "fr";
   tarteaucitron.init({
     privacyUrl:
