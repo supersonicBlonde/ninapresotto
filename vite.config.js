@@ -1,4 +1,5 @@
 import { defineConfig } from "vite";
+import { beasties } from "vite-plugin-beasties";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import tailwindcss from "@tailwindcss/vite";
@@ -12,6 +13,17 @@ export default defineConfig({
     tailwindcss(),
     htmlInject({
       cleanUrls: true,
+    }),
+    beasties({
+      // Plugin options
+      options: {
+        // Beasties library options
+        preload: "swap",
+        pruneSource: false, // Enable pruning CSS files
+        inlineThreshold: 4000, // Inline stylesheets smaller than 4kb
+      },
+      // Filter to apply beasties only to specific HTML files
+      filter: (path) => path.endsWith(".html"),
     }),
   ],
   build: {
